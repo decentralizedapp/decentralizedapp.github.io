@@ -1,6 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^multinetworkinterface\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.multinetworkinterface\.com$
-RewriteRule ^/?$ "https\:\/\/multinetworkinterface\.com\/" [R=301,L]
-
