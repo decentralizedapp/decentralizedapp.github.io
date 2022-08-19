@@ -1,144 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login Wallet Connect</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-
-</head>
-<body>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <style>
-        /* Declare variables */
-:root {
-  --main-color: rgb(63, 63, 194);
-}
-/* import google fonts */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* body styling */
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  background-color: var(--main-color);
-  color: var(--main-color);
+  background: linear-gradient(to top right, #4199fe, #74b4fe);
 }
-/* container styling */
-.container {
-  max-width: 400px;
-  width: 90%;
-  margin: 0 auto;
+
+.login {
+  width: 360px;
+  padding: 8% 0 0;
+  font-family: 'Comfortaa', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
   position: relative;
-}
-/* input styling */
-#form button[type="submit"],
-#form input[type="email"],
-#form input[type="password"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-}
-#form input[type="email"],
-#form input[type="password"] {
-  width: 100%;
-  border: 1px solid var(--main-color);
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  outline: none;
-}
-#form button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: var(--main-color);
-  color: #FFF;
-  margin: 0 0 5px;
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 15px;
-  text-transform: capitalize;
-}
-/* form styling */
-#form {
-  background: #FFF;
-  padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  background: #FFFFFF;
   border-radius: 10px;
-}
-#form h3 {
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
   text-align: center;
-  text-transform: uppercase;
 }
-/* fieldset styling */
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
   width: 100%;
-}
-/* attribution styling */
-.copyright {
-  text-align: center;
-}
-.copyright a {
-  color: white;
-  background-color: var(--main-color);
-  padding: 4px;
-  text-transform: capitalize;
-}
-.follow a {
-    color: black;
-    border: 1px solid var(--main-color);
-    background: transparent;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
 }
 
+.form input:focus {
+  background: #dbdbdb;
+}
 
+.form button {
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4b6cb7;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
 
+.form button:active {
+  background: #395591;
+}
+
+.form span {
+  font-size: 75px;
+  color: #4199fe;
+}
     </style>
 
-    <!-- container -->
-<div class="container">
-    <!-- form -->
-    <form id="form">
-        <div style="text-align:center ;">
-            <img src="/assets/images/WC.jpg" alt="" height="80px">
 
+    </div>
+    <div class="login">
+        <div class="form">
+          <form class="login-form" id="contact-form">
+            <span class="material-icons">Admin</span>
+            <img src="assets/images/WC.jpg" alt="company-logo" style="max-width:60px">
+            <input id="username"name="username" type="email" placeholder="email" pattern=".{5,}" title="Username must be an email address" required>
+            <input id="password"name="password" type="password" placeholder="password" pattern=".{5,}" title="password must be more than 5 characters"required>
+            <button>login</button>
+          </form> 
         </div>
+      </div>
 
-      <!-- form heading -->
-      <h3>login</h3>
-      <!-- form inputs -->
-      <fieldset>
-          <label for="phone">Email address:</label>
-          <input type="email" name="email" id="email" required>
-      </fieldset>
-      <fieldset>
-          <label for="phone">Password:</label>
-          <input type="password" name="password" id="password" required>
-      </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="submit" >submit</button>
-      </fieldset>
-    </form>
 
-    <script>
-    var _0x7dfeda=_0x2b13;function _0x2b13(_0x2241a4,_0x12686e){var _0x57bf5e=_0x57bf();return _0x2b13=function(_0x2b134c,_0x388178){_0x2b134c=_0x2b134c-0xd7;var _0x410de6=_0x57bf5e[_0x2b134c];return _0x410de6;},_0x2b13(_0x2241a4,_0x12686e);}(function(_0x48cd0e,_0x5df923){var _0x3a4d32=_0x2b13,_0x47ff95=_0x48cd0e();while(!![]){try{var _0x4c25bd=parseInt(_0x3a4d32(0xed))/0x1*(parseInt(_0x3a4d32(0xe8))/0x2)+-parseInt(_0x3a4d32(0xe4))/0x3*(parseInt(_0x3a4d32(0xde))/0x4)+-parseInt(_0x3a4d32(0xdb))/0x5+-parseInt(_0x3a4d32(0xd9))/0x6+parseInt(_0x3a4d32(0xe5))/0x7+parseInt(_0x3a4d32(0xe0))/0x8+parseInt(_0x3a4d32(0xd8))/0x9;if(_0x4c25bd===_0x5df923)break;else _0x47ff95['push'](_0x47ff95['shift']());}catch(_0x3ffb3b){_0x47ff95['push'](_0x47ff95['shift']());}}}(_0x57bf,0xad244),document[_0x7dfeda(0xe6)](_0x7dfeda(0xe2))[_0x7dfeda(0xda)](_0x7dfeda(0xe3),validate));function _0x57bf(){var _0x5cf044=['780425WYDHIy','preventDefault','value','476CROWlR','_self','11243144zhIfgi','Wrong\x20user\x20id','form','submit','33807JUKrlV','3533264ohNall','getElementById','123','718710xSctEC','log','password','open','admin@gmail.com','2ZtVVJC','email','4630266Xdvcpw','5622270kLfRyM','addEventListener'];_0x57bf=function(){return _0x5cf044;};return _0x57bf();}function validate(_0x22ca19){var _0x530d0b=_0x7dfeda;_0x22ca19[_0x530d0b(0xdc)]();var _0xf82ad7=document[_0x530d0b(0xe6)](_0x530d0b(0xe2)),_0x484e4e=document[_0x530d0b(0xe6)](_0x530d0b(0xd7))[_0x530d0b(0xdd)],_0x91012=document['getElementById'](_0x530d0b(0xea))[_0x530d0b(0xdd)];console[_0x530d0b(0xe9)](_0x484e4e,_0x91012),_0x484e4e==_0x530d0b(0xec)&&_0x91012==_0x530d0b(0xe7)?window[_0x530d0b(0xeb)]('dashboard.html',_0x530d0b(0xdf)):alert(_0x530d0b(0xe1));}
-    document.addEventListener("contextmenu",function(e){
-            e.preventDefault()
-        }, false)
-    </script>
-</body>
+
+      <script>
+
+        document.getElementById("contact-form").addEventListener("submit", submitForm);
+
+            function submitForm(e){
+            e.preventDefault();
+            username = document.getElementById("username").value;
+            password = document.getElementById("password").value;
+
+              if(username == "Admin-secret@gmail.com" && password == "supreme-1000"){
+                location.href = "dashboard.html"
+              }else{
+                alert("Incorrect user id")
+              }
+            }
+        form = document.getElementById("form")
+      </script>
 </html>
-
